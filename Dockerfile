@@ -1,7 +1,7 @@
 FROM ubuntu:22.04
 MAINTAINER "sohailshaikh125@gmail.com"
 RUN apt-get update -y 
-RUN apt-get install -y nginx curl zip
+RUN apt-get install -y nginx 
 RUN echo "daemon off ;" >>/etc/nginx/nginx.conf
 COPY . /var/www/html/
 EXPOSE 80
